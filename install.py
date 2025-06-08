@@ -43,7 +43,7 @@ def get_config_paths() -> Dict[str, Path]:
                 "cline": home / ".cline/mcp.json",
                 "windsurf": home / ".codeium/windsurf/mcp_config.json",
                 "n8n": home / ".n8n/mcp.json",
-                "5ire": home / ".5ire/mcp.json",
+                "5ire": home / "Library/Application Support/5ire/mcp.json",
             }
         )
     elif system == "Windows":
@@ -57,7 +57,7 @@ def get_config_paths() -> Dict[str, Path]:
                 "cline": home / ".cline/mcp.json",
                 "windsurf": Path(localappdata) / "Codeium/Windsurf/mcp_config.json",
                 "n8n": home / ".n8n/mcp.json",
-                "5ire": home / ".5ire/mcp.json",
+                "5ire": Path(appdata) / "5ire/mcp.json",
             }
         )
     else:  # Linux and others
@@ -69,7 +69,7 @@ def get_config_paths() -> Dict[str, Path]:
                 "cline": home / ".cline/mcp.json",
                 "windsurf": home / ".config/windsurf/mcp_config.json",
                 "n8n": home / ".n8n/mcp.json",
-                "5ire": home / ".5ire/mcp.json",
+                "5ire": home / ".config/5ire/mcp.json",
             }
         )
 
