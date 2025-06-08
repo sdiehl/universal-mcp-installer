@@ -14,20 +14,21 @@ Installing local MCP servers is a pain. Each client has different config formats
    SERVER_EXECUTABLE = "path/to/your/server.py"
    ```
 
-3. Then all the end user needs to do is run the installer:
+3. Then all the end user needs to do is clone you repo and run the installer:
+
    ```bash
    uv run install.py
    ```
 
 ## Supported Clients
 
-- **Claude Desktop** - `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Cursor** - `~/.cursor/mcp.json`
-- **VS Code** - `~/.vscode/mcp.json`
-- **Cline** - `~/.cline/mcp.json`
-- **Windsurf** - `~/.codeium/windsurf/mcp_config.json`
-- **n8n** - `~/.n8n/mcp.json`
-- **5ire** - `~/.5ire/mcp.json`
+- **Claude Desktop**
+- **Cursor**
+- **VS Code**
+- **Cline**
+- **Windsurf**
+- **n8n**
+- **5ire**
 
 ## Requirements
 
@@ -36,4 +37,4 @@ Installing local MCP servers is a pain. Each client has different config formats
 
 ## License
 
-Do whatever. [WTFPL](LICENSE)
+Just do whatever. [WTFPL](LICENSE)
