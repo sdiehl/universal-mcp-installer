@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """
 A universal MCP Server Installer Script. Works with the following clients:
 

@@ -4,20 +4,22 @@ Installing local MCP servers is a pain. Each client has different config formats
 
 ## Quick Start
 
-1. Drop `install.py` into your MCP server project
+1. Drop `install.py` into the root of your MCP server project that uses uv for package management.
 
-2. Edit the configuration variables at the top:
+2. Edit the configuration variables at the top of `install.py` to match your server's details.
+
+   ```python
 
    ```python
    # XXX: Change these to match your server
    SERVER_NAME = "your-server-name"
-   SERVER_EXECUTABLE = "path/to/your/server.py"
+   SERVER_EXECUTABLE = "local/path/to/server.py"
    ```
 
 3. Then all the end user needs to do is clone you repo and run the installer:
 
    ```bash
-   uv run install.py
+   ./install.py
    ```
 
 ## Supported Clients
@@ -29,11 +31,6 @@ Installing local MCP servers is a pain. Each client has different config formats
 - **Windsurf**
 - **n8n**
 - **5ire**
-
-## Requirements
-
-- Python 3.8+
-- `uv` package manager (for running the server)
 
 ## License
 
